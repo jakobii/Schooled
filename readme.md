@@ -101,7 +101,7 @@ __Properties__
 
 
 # Class
-A Class is an instance of a syllubas that is eventually scheduled and filled with students. A Student enrolls in a Curriculum by being assigned to a Class. Classes can be schedule before students enroll if needed. A class is intended to organize students into group sizes small enough to fit into a class room or meet teacher and student ratios. when scheduling a class, the time it takes for a student to complete the syllabus and fullfill the expectations of the Curriculum should be taken into consideration. Class should be schdeuled 1 or more times for students to attend it.
+A Class is a container for students with the intent of completing the same syllabus and should eventually be scheduled and filled with students. A Student enrolls in a Curriculum by being assigned to a Class. Classes can be schedule before students enroll if needed. A class is intended to organize students into group sizes small enough to fit into a class room or meet teacher and student ratios. when scheduling a class, the time it takes for a student to complete the syllabus and fullfill the expectations of the Curriculum should be taken into consideration. Class should be schdeuled 1 or more times for students to attend it.
 
 __Properties__
 - ID _uuid pk_
@@ -109,6 +109,7 @@ __Properties__
 - Curriculum _fk_
 - MaxSize _int_
 - Teacher _fk_
+- Qualifications
 
 
 # Schedule
