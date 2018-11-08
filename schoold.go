@@ -1,12 +1,13 @@
 package school
 
 // Person is a simple interface that all peoply types should implement.
-type Personal interface {
-	ContactInfo() Contact
+type Contacter interface {
+	Contact() TMI
 }
 
-// Contact stores standard contact information.
-type Contact struct {
+
+// TMI (To Much Information) stores standard contact information.
+type TMI struct {
 	FirstName    string
 	LastName     string
 	MiddleName   string

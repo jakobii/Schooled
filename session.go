@@ -10,7 +10,7 @@ type Session struct {
 	ID         uuid.UUID
 	Start, End time.Time
 	Teachers   []Teacher
-	Attendance []Student
+	Attendance []Attender
 }
 
 // Duration gets the duration of a class session.
