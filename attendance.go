@@ -1,7 +1,7 @@
 package school
 
 import (
-	"uuid"
+	"github.com/google/uuid"
 	"time"
 )
 
