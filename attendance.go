@@ -5,13 +5,12 @@ import (
 	"time"
 )
 
-
 // Attender interface is used to calculate standard attendance information.
 // Attended should simply state whether or not a student attended class
 // duration should return the amount of time spent in class.
 type Attender interface {
 	Attended() bool
-  Duration() time.Duration
+	Duration() time.Duration
 }
 
 // PercentAttendance represented a students attendance to a class session.
@@ -24,7 +23,7 @@ type Attender interface {
 // historical events.
 type PercentAttendance struct {
 	Session *Session
-  Student *Student
+	Student *Student
 	ID      uuid.UUID
 	Percent float64 // percent of class attended
 }
@@ -37,6 +36,8 @@ func (a *PercentAttendance) Attended() (b bool) {
 	}
 	return false
 }
+
+/*
 
 // TimeAttendance is used to capture the duration of time a student spent in a
 // class session. It is less flexalble the PercentAttendance but can has the
@@ -67,3 +68,4 @@ type BoolAttendance struct {
 func (a *BoolAttendance) Attended() (b bool) {
 	return a.Bool
 }
+*/

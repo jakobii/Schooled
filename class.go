@@ -1,6 +1,10 @@
 package school
 
-type class struct {
+import (
+	"github.com/google/uuid"
+)
+
+type Class struct {
 	ID       uuid.UUID
 	Teachers []Teacher
 }

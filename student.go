@@ -1,5 +1,5 @@
 package school
 
-type student interface {
+type Student struct {
 	Person
 }
