@@ -1,4 +1,4 @@
-package schoold
+package school
 
 // Person is a simple interface that all peoply types should implement.
 type Person interface {
